@@ -1,0 +1,148 @@
+/* FontAwesome for working BootSnippet :> */
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+#flipteamsection {
+	background: #f9f9f9 !important;
+	padding: 60px 0;
+	font-size: 1rem !important;
+	font-weight: 400 !important;
+	line-height: 1.5 !important;
+	color: #212529 !important;
+}
+
+#flipteamsection .btn-primary:hover,
+#flipteamsection .btn-primary:focus {
+	background-color: #ec5015;
+	border-color: #ec5015;
+	box-shadow: none;
+	outline: none;
+}
+
+#flipteamsection .btn-primary.btn-sm {
+	color: #fff !important;
+	background-color: #ec5015 !important;
+	border-color: #ec5015 !important;
+	padding: 5px 10px;
+}
+
+#flipteamsection .section-title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+#flipteamsection .section-title .h1 {
+	color: #db3c00;
+	margin-bottom: 0;
+}
+#flipteamsection h4.card-title {
+	margin-bottom: 0 !important;
+}
+#flipteamsection .card {
+	border: none;
+	background: #ffffff;
+}
+
+#flipteamsection .image-flip:hover .backside,
+#flipteamsection .image-flip.hover .backside {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	border-radius: 0.25rem;
+	overflow: hidden;
+}
+
+#flipteamsection .image-flip:hover .frontside,
+#flipteamsection .image-flip.hover .backside {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+#flipteamsection .mainflip {
+	-webkit-transition: 1s;
+	-webkit-transform-style: preserve-3d;
+	-ms-transition: 1s;
+	-moz-transition: 1s;
+	transform: perspective(1000px);
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.flip {
+	transform: rotateY(180deg) !important;
+	transform-style: preserve-3d;
+	-webkit-backface-visibility: visible !important;
+	-moz-backface-visibility: visible !important;
+	-ms-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+}
+#flipteamsection .frontside {
+	position: relative;
+	transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	z-index: 2;
+	margin-bottom: 30px;
+}
+
+#flipteamsection .backside {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: white;
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+	-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	-moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	height: 100%;
+	width: 100%;
+}
+
+#flipteamsection .frontside,
+#flipteamsection .backside {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: 1s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transition: 1s;
+	-moz-transform-style: preserve-3d;
+	-o-transition: 1s;
+	-o-transform-style: preserve-3d;
+	-ms-transition: 1s;
+	-ms-transform-style: preserve-3d;
+	transition: 1s;
+	transform-style: preserve-3d;
+}
+
+#flipteamsection .frontside .card,
+#flipteamsection .backside .card {
+	min-height: 312px;
+}
+
+#flipteamsection .frontside .card .card-title,
+#flipteamsection .backside .card .card-title {
+	color: #ec5015 !important;
+}
+
+#flipteamsection .frontside .card .card-body {
+	flex: none;
+}
+#flipteamsection .frontside .card .card-body img {
+	width: 150px;
+	border-radius: 50%;
+}
+#flipteamsection .frontside .card .card-body .designation {
+	font-size: 14px;
+}
+#flipteamsection .backside .card .card-body .social li a {
+	color: #ec5015;
+}
